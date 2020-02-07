@@ -18,8 +18,6 @@ module.exports = (req, res) => {
 
   if (req.method === 'OPTIONS') {
     return res.end()
-  } else if (req.method !== "POST") {
-    return res.status(405).end()
   }
 
   if (!base) {
