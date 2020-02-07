@@ -8,7 +8,7 @@ let base;
 module.exports = (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", ["OPTIONS", "POST"]);
-  res.seHeader("Access-Control-Allow-Headers", [
+  res.setHeader("Access-Control-Allow-Headers", [
     "Origin",
     "X-Requested-With",
     "Content-Type",
@@ -18,6 +18,8 @@ module.exports = (req, res) => {
 
   if (req.method === 'OPTIONS') {
     return res.end()
+  } else if (req.method !== "POST") {
+    return res.status(405).end()
   }
 
   if (!base) {
