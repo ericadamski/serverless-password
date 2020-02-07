@@ -1,19 +1,6 @@
 {
   "version": 2,
-  "alias": "svrlss",
   "env": {
     "AIRTABLE_API": "@svrls-pwd-airtable-api"
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/ok",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "OPTIONS",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-      },
-      "methods": ["OPTIONS"]
-    }
-  ]
+  }
 }
