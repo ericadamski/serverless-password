@@ -15,7 +15,6 @@ module.exports = async (req, res) => {
       [{ fields: { hash: await hash(req.body.pwd) } }],
       (err, [record]) => {
         if (err) {
-          console.log(err)
           return res.status(500).end();
         }
 
