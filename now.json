@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "alias": "svrlss",
+  "env": {
+    "AIRTABLE_API": "@svrls-pwd-airtable-api"
+  }
+}
