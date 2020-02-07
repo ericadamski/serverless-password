@@ -11,7 +11,7 @@ export default () => {
 
   useEffect(() => setLoading(false), [id]);
   useEffect(() => setPwd(""), [loading]);
-  useEffect(() => copied && setTimeout(() => setCopied(false), 2500), [copied]);
+  // useEffect(() => copied && setTimeout(() => setCopied(false), 2500), [copied]);
 
   const clickToCopy = () => {
     copy(`https://svrlss.now.sh/api/get/${id}`);
