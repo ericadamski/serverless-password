@@ -30,6 +30,8 @@ if (response.ok) {
 
 You can run this in a modern browser console.
 
+> be careful of CORS 😡
+
 ```JavaScript
 async function validatePassword(pwd) {
     const response = await fetch("https://svrlss.now.sh/api/get/rec3T73O3WNZk3IZj", {
