@@ -45,10 +45,7 @@ export default () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="og:title" content="PaaS-sword" />
         <link rel="shortcut icon" href="/favicon.png" />
-        <meta
-          name="og:url"
-          content="https://paassword.now.sh"
-        />
+        <meta name="og:url" content="https://paassword.now.sh" />
         <meta
           name="description"
           content="Quickly and securly store a password and get a url to validate it!"
@@ -57,11 +54,11 @@ export default () => {
           name="og:description"
           content="Quickly and securly store a password and get a url to validate it!"
         />
-        <meta
-          name="og:image"
-          content="https://paassword.now.sh/paasword.png"
+        <meta name="og:image" content="https://paassword.now.sh/paasword.png" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-129208280-5"
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129208280-5" />
         <script>{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -109,7 +106,6 @@ export default () => {
             </button>
           </div>
 
-          {/*<!-- CURL this link -->*/}
           {id !== undefined && (
             <pre onClick={clickToCopy}>
               <code>https://svrlss.now.sh/api/get/{id}</code>
