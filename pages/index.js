@@ -61,7 +61,6 @@ export default () => {
           name="og:image"
           content="https://paassword.now.sh/paasword.png"
         />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129208280-5" />
         <script>
           window.dataLayer = window.dataLayer || [];
