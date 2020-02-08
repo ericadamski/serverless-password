@@ -37,7 +37,7 @@ async function validatePassword(pwd) {
     const response = await fetch("https://svrlss.now.sh/api/get/rec3T73O3WNZk3IZj", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ pwd }) /* the real password is dev.to */
+        body: JSON.stringify({ pwd })
     })
 
     if (response.ok) {
@@ -51,5 +51,5 @@ async function validatePassword(pwd) {
     }
 }
 
-validatePassword("test")
+validatePassword("test") /* the real password is dev.to */
 ```
